@@ -2,7 +2,7 @@
 
 
 
-> Unofficial API for scraping torrents from 1337x, Piratebay, Eztv, Nyaasi, Torlock, YTS, Torrent Galaxy, Rarbg, Zooqle, KickAss, Bitsearch, Glodls, MagnetDL, LimeTorrent, TorrentFunk, TorrentProject and Ettv.
+> Unofficial API for scraping torrents from 1337x, Piratebay, Eztv, Nyaasi, Torlock, YTS, Torrent Galaxy, Rarbg, ~~Zooqle~~, KickAss, Bitsearch, Glodls, ~~MagnetDL~~, LimeTorrent, TorrentFunk, TorrentProject and ~~Ettv~~.
 
 ---
 
@@ -44,12 +44,12 @@ $ npm start
 | PirateBay      | piratebay                                      | <https://thehiddenbay.com>          | [/api/piratebay/avengers](https://itorrentsearch.vercel.app/api/piratebay/avengers)           |
 | Nyaasi      | nyaasi                                         | <https://nyaa.si>                   | [/api/nyaasi/umaru](https://itorrentsearch.vercel.app/api/nyaasi/umaru)                       |
 | Rarbg          | rarbg                                          | <https://rargb.to>                  | [/api/rarbg/avengers](https://itorrentsearch.vercel.app/api/rarbg/avengers)                   |
-| Ettv           | ettv                                           | <https://www.ettvcentral.com>       | [/api/ettv/avengers](https://itorrentsearch.vercel.app/api/ettv/avengers)                     |
-| Zooqle         | zooqle                                         | <https://zooqle.com>                | [/api/zooqle/avengers](https://itorrentsearch.vercel.app/api/zooqle/avengers)                 |
+| ~~Ettv~~           | ~~ettv~~                                           | ~~<https://www.ettvcentral.com>~~       | DEAD                     |
+| ~~Zooqle~~         | ~~zooqle~~                                         | ~~<https://zooqle.com>~~                | DEAD                 |
 | KickAss        | kickass                                        | <https://kickasstorrents.to>        | [/api/kickass/avengers](https://itorrentsearch.vercel.app/api/kickass/avengers)               |
 | Bitsearch      | bitsearch                                      | <https://bitsearch.to>              | [/api/bitsearch/avengers](https://itorrentsearch.vercel.app/api/bitsearch/avengers)           |
 | Glodls         | glodls                                         | <https://glodls.to/home.php>        | [/api/glodls/avengers](https://itorrentsearch.vercel.app/api/glodls/avengers)                 |
-| MagnetDL       | magnetdl                                       | <https://www.magnetdl.com>          | [/api/magnetdl/avengers](https://itorrentsearch.vercel.app/api/magnetdl/avengers)             |
+| ~~MagnetDL~~       | ~~magnetdl~~                                       | ~~<https://www.magnetdl.com>~~          | DEAD            |
 | LimeTorrent    | limetorrent                                    | <https://www.limetorrents.pro/home> | [/api/limetorrent/avengers](https://itorrentsearch.vercel.app/api/limetorrent/avengers)       |
 | TorrentFunk    | torrentfunk                                    | <https://www.torrentfunk.com>       | [/api/torrentfunk/avengers](https://itorrentsearch.vercel.app/api/torrentfunk/avengers)       |
 | TorrentProject | torrentproject                                 | <https://torrentproject2.com>       | [/api/torrentproject/avengers](https://itorrentsearch.vercel.app/api/torrentproject/avengers) |
@@ -144,6 +144,36 @@ $ npm start
 ]
 ```
 
+#### 📤Request
+
+```
+/api/torrents
+```
+
+#### 📥Response
+
+```json
+[
+  "1337x",
+  "bitsearch",
+  "ettv",
+  "eztv",
+  "glodls",
+  "kickass",
+  "limetorrent",
+  "magnetdl",
+  "nyaasi",
+  "piratebay",
+  "rarbg",
+  "tgx",
+  "torlock",
+  "torrentfunk",
+  "torrentproject",
+  "yts",
+  "zooqle"
+]
+```
+
 ---
 
 ## 🔍Want to try this API ?
@@ -190,3 +220,4 @@ You can fork the repo and deploy on VPS
 | Contributor | Added Features |
 | ----------- | ----------- |
 | [theriturajps](https://github.com/theriturajps) | Built [Torrents-Api](https://github.com/theriturajps/Torrent-Search-API) + Made deployable with Heroku |
+| [Airplanegobrr](https://github.com/airplanegobrr) | Cleaned code + removed dead torrent hosts |
